@@ -1,17 +1,17 @@
 {
   "name": "worklog",
   "module": "src/index.ts",
-  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
   "private": true,
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "bun build --compile ./src/index.ts --outfile worklog",
     "start": "bun run src/index.ts"
   },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
+  "type": "module",
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^7"
   }
 }
